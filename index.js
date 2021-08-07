@@ -70,20 +70,20 @@ function addNewCard() {
     formButtom = document.createElement('button')
 
     // add styles & attributes
-    form.className = 'mb-5'
+    form.className = 'mb-5 flex flex-col w-60 sm:block sm:w-auto'
     form.action = '#'
     formLabel.className = 'sr-only'
     formLabel.htmlFor = 'new_task'
     
     // <input> tag
-    formInput.className = 'mr-5 appearance-none rounded-none px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 sm:rounded-lg shadow-sm -space-y-px focus:outline-none focus:ring-blue-400 focus:border-blue-400 focus:z-10 sm:text-sm'
+    formInput.className = 'w-full sm:w-auto mr-5 appearance-none rounded-none px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 sm:rounded-lg shadow-sm -space-y-px focus:outline-none focus:ring-blue-400 focus:border-blue-400 focus:z-10 sm:text-sm'
     formInput.type = 'text'
     formInput.id = 'new_task'
     formInput.placeholder = 'Create new task'
     formInput.required = true
 
     // <button> tag
-    formButtom.className = 'bg-blue-600 rounded-md px-9 py-2 text-white sm:text-sm hover:bg-blue-700'
+    formButtom.className = 'bg-blue-600 rounded-none sm:rounded-lg px-9 py-2 text-white sm:text-sm hover:bg-blue-700'
     formButtom.textContent = 'Add'
     formButtom.type = 'submit'
 
