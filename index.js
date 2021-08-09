@@ -1,3 +1,5 @@
+'use strict'
+
 const root = document.querySelector('#root')
 root.className = 'm-5 flex flex-col items-center'
 
@@ -64,10 +66,10 @@ function renderCard(model) {
 // Input form to create new task
 function addNewCard() {
     // create HTML tags
-    form = document.createElement('form')
-    formLabel = document.createElement('label')
-    formInput = document.createElement('input')
-    formButtom = document.createElement('button')
+    const form = document.createElement('form')
+    const formLabel = document.createElement('label')
+    const formInput = document.createElement('input')
+    const formButtom = document.createElement('button')
 
     // add styles & attributes
     form.className = 'mb-5 flex flex-col w-60 sm:block sm:w-auto'
