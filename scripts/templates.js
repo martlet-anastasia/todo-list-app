@@ -181,10 +181,10 @@ function isEmpty(input) {
     if(!input.value) {
         input.parentElement.classList.remove('border-transparent')
         input.parentElement.classList.add('border-red-500')
-        setTimeout(EmptyRemove, 1000, input)
+        setTimeout(emptyRemove, 1000, input)
     }
 }
-function EmptyRemove(input) {
+function emptyRemove(input) {
     input.parentElement.classList.remove('border-red-500')
     input.parentElement.classList.add('border-transparent')
 }
